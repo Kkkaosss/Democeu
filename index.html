@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909"><meta name="description" content="DEMOCEU — manualidades de 6.º B de Es Liceu para recaudar fondos para el viaje de estudios.">
+  <title>DEMOCEU · 6.º B Es Liceu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <button class="menu-trigger" id="menuOpen" aria-label="Abrir menú"><span class="hamburger">☰</span><span data-i18n="menu">Menú</span></button>
+      <a class="mini-brand" href="#inicio" data-go="inicio">DEMOCEU<span>✳</span></a>
+      <div class="top-actions">
+        <div class="language-flags" aria-label="Seleccionar idioma">
+          <button class="flag active" data-lang="es" aria-label="Español" title="Español">🇪🇸</button>
+          <button class="flag" data-lang="ca" aria-label="Català" title="Català"><span class="cat-flag" aria-hidden="true"></span></button>
+          <button class="flag" data-lang="en" aria-label="English" title="English">🇺🇸</button>
+        </div>
+        <button class="wishlist-top" id="wishlistOpen"><span class="star">☆</span><span data-i18n="wishlist">Lista de deseados</span><b id="wishlistCount">0</b></button>
+      </div>
+    </header>
+
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-head"><a href="#inicio" data-go="inicio" class="drawer-logo">DEMOCEU<span>✳</span></a><button id="menuClose" class="icon-button" aria-label="Cerrar menú">×</button></div>
+      <nav class="drawer-nav">
+        <button data-go="inicio"><span>⌂</span><span data-i18n="home">Inicio</span></button>
+        <div class="nav-group"><button class="nav-parent" id="productsToggle"><span>▦</span><span data-i18n="products">Productos</span><span class="chevron">⌄</span></button>
+          <div class="nav-sub" id="productSubnav"><button data-go="cat1" data-i18n="cat1">Categoría 1</button><button data-go="cat2" data-i18n="cat2">Categoría 2</button><button data-go="cat3" data-i18n="cat3">Categoría 3</button></div>
+        </div>
+        <button data-go="recommendations"><span>✉</span><span data-i18n="recommendations">Recomendaciones</span></button>
+        <button data-go="hours"><span>◷</span><span data-i18n="hours">Horarios</span></button>
+        <button data-go="settings"><span>⚙</span><span data-i18n="settings">Ajustes</span></button>
+      </nav>
+      <div class="drawer-foot">6.º B · ES LICEU</div>
+    </aside>
+
+    <main id="mainContent">
+      <section class="page active" id="page-inicio" data-page="inicio">
+        <div class="hero-frame">
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-content"><p class="eyebrow" data-i18n="heroEyebrow">6.º B · ES LICEU PRESENTA</p><h1>DEMOCEU<span>✳</span></h1>
+            <p class="hero-sub" data-i18n="heroSub">Pequeñas creaciones, un gran viaje.</p>
+            <a class="pill-button hero-about" href="#quienes" data-i18n="who">¿Quiénes somos?</a>
+          </div>
+          <div class="hero-bottom"><span class="hero-note" data-i18n="heroNote">Hecho con ilusión por nuestra clase</span><span class="hero-index">01 / 04</span></div>
+        </div>
+        <section class="intro-section" id="quienes"><div class="section-kicker" data-i18n="aboutKicker">CONÓCENOS</div><div class="intro-grid"><h2 data-i18n="who">¿Quiénes somos?</h2><p data-i18n="aboutText">Nosotros somos el grupo de 6.º B (EP) del colegio Es Liceu. Esta página web ha sido creada para recaudar dinero para el viaje de estudios, vendiendo manualidades hechas por nosotros.</p></div></section>
+        <section class="shortcut-section"><div class="section-heading"><div><div class="section-kicker" data-i18n="explore">DESCUBRE DEMOCEU</div><h2 data-i18n="exploreTitle">¿Qué te apetece descubrir?</h2></div><span class="heading-spark">✳</span></div>
+          <div class="shortcut-grid">
+            <button class="shortcut-card pink" data-go="cat1"><span class="shortcut-number">01</span><span class="shortcut-icon">✿</span><strong data-i18n="cat1">Categoría 1</strong><span class="shortcut-arrow">↗</span></button>
+            <button class="shortcut-card red" data-go="cat2"><span class="shortcut-number">02</span><span class="shortcut-icon">✧</span><strong data-i18n="cat2">Categoría 2</strong><span class="shortcut-arrow">↗</span></button>
+            <button class="shortcut-card cream" data-go="cat3"><span class="shortcut-number">03</span><span class="shortcut-icon">❋</span><strong data-i18n="cat3">Categoría 3</strong><span class="shortcut-arrow">↗</span></button>
+            <button class="shortcut-card outline" data-go="recommendations"><span class="shortcut-number">04</span><span class="shortcut-icon">♡</span><strong data-i18n="recommendations">Recomendaciones</strong><span class="shortcut-arrow">↗</span></button>
+          </div>
+        </section>
+        <footer class="site-footer"><span>DEMOCEU ✳</span><span data-i18n="footer">Una iniciativa de 6.º B · Es Liceu</span></footer>
+      </section>
+
+      <section class="page" id="page-cat1" data-page="cat1"><div class="page-heading"><div><div class="section-kicker" data-i18n="products">PRODUCTOS</div><h1 data-i18n="cat1">Categoría 1</h1><p data-i18n="categoryIntro">Pequeñas creaciones hechas a mano por nuestra clase.</p></div><span class="heading-stamp">01</span></div><div class="product-grid" id="products-cat1"></div></section>
+      <section class="page" id="page-cat2" data-page="cat2"><div class="page-heading"><div><div class="section-kicker" data-i18n="products">PRODUCTOS</div><h1 data-i18n="cat2">Categoría 2</h1><p data-i18n="categoryIntro">Pequeñas creaciones hechas a mano por nuestra clase.</p></div><span class="heading-stamp">02</span></div><div class="product-grid" id="products-cat2"></div></section>
+      <section class="page" id="page-cat3" data-page="cat3"><div class="page-heading"><div><div class="section-kicker" data-i18n="products">PRODUCTOS</div><h1 data-i18n="cat3">Categoría 3</h1><p data-i18n="categoryIntro">Pequeñas creaciones hechas a mano por nuestra clase.</p></div><span class="heading-stamp">03</span></div><div class="product-grid" id="products-cat3"></div></section>
+
+      <section class="page" id="page-recommendations" data-page="recommendations"><div class="page-heading"><div><div class="section-kicker" data-i18n="sayHello">TU OPINIÓN CUENTA</div><h1 data-i18n="sendRecommendation">¡Mándanos tu recomendación!</h1><p data-i18n="recommendIntro">Puedes enviarnos ideas de nuevos productos o propuestas para mejorar nuestra página web. ¡Te leemos!</p></div><span class="heading-stamp">♡</span></div>
+        <div class="recommend-layout"><div class="recommend-aside"><span class="big-quote">“</span><h2 data-i18n="ideasMatter">Las buenas ideas hacen crecer los proyectos.</h2><p data-i18n="thanks">¡Gracias por ayudarnos a mejorar DEMOCEU!</p></div>
+          <form class="recommend-form" id="recommendForm"><label><span data-i18n="yourName">Tu nombre</span><input name="name" autocomplete="name" required maxlength="80" data-placeholder="namePlaceholder" placeholder="¿Cómo te llamas?"></label><label><span data-i18n="yourEmail">Tu correo electrónico</span><input name="email" type="email" autocomplete="email" required maxlength="150" placeholder="nombre@ejemplo.com"></label><label><span data-i18n="yourMessage">Recomendación / Mejora</span><textarea name="message" rows="5" required maxlength="2000" data-placeholder="messagePlaceholder" placeholder="Cuéntanos tu idea..."></textarea></label><button class="primary-button" type="submit"><span data-i18n="send">Enviar</span><span>↗</span></button><p class="form-status" id="formStatus" role="status" aria-live="polite"></p><p class="form-privacy" data-i18n="formPrivacy">No compartas contraseñas ni información privada.</p></form>
+        </div></section>
+
+      <section class="page" id="page-settings" data-page="settings"><div class="page-heading"><div><div class="section-kicker" data-i18n="personalize">PERSONALIZA TU EXPERIENCIA</div><h1 data-i18n="settings">Ajustes</h1><p data-i18n="settingsIntro">Adapta DEMOCEU a tu gusto.</p></div><span class="heading-stamp">⚙</span></div>
+        <div class="settings-list"><article class="setting-card"><div class="setting-copy"><span class="setting-icon">◐</span><div><h2 data-i18n="visualMode">Modo visual</h2><p data-i18n="visualDesc">Elige la combinación de colores que prefieras.</p></div></div><div class="theme-options"><button class="theme-choice" data-theme-choice="dark"><span class="theme-dot dark-dot"></span><span data-i18n="darkTheme">Rojo + Negro</span><small data-i18n="darkMode">Modo oscuro</small></button><button class="theme-choice" data-theme-choice="light"><span class="theme-dot light-dot"></span><span data-i18n="lightTheme">Blanco + Rosa</span><small data-i18n="lightMode">Modo claro</small></button></div></article>
+          <article class="setting-card"><div class="setting-copy"><span class="setting-icon">Aa</span><div><h2 data-i18n="dyslexia">Tipografía accesible</h2><p data-i18n="dyslexiaDesc">Activa una fuente diseñada para facilitar la lectura.</p></div></div><label class="switch"><input type="checkbox" id="dyslexiaToggle"><span class="switch-track"></span><span class="sr-only" data-i18n="enableDyslexia">Activar tipografía accesible</span></label></article>
+          <article class="setting-card"><div class="setting-copy"><span class="setting-icon">文</span><div><h2 data-i18n="language">Idioma</h2><p data-i18n="languageDesc">Selecciona el idioma de toda la página.</p></div></div><div class="setting-languages"><button data-lang="es">🇪🇸 ES</button><button data-lang="ca"><span class="cat-flag" aria-hidden="true"></span> CA</button><button data-lang="en">🇺🇸 EN</button></div></article>
+        </div></section>
+
+      <section class="page hours-page" id="page-hours" data-page="hours"><div class="hours-content"><span class="hours-sad-icon">☹</span><p data-i18n="hoursMessage">Ups! aún no tenemos los horarios. lo siento!</p><div class="hours-face">:(</div><button class="primary-button" data-go="inicio"><span data-i18n="backHome">Volver al inicio</span><span>↗</span></button></div></section>
+
+      <section class="page" id="page-wishlist" data-page="wishlist"><div class="page-heading"><div><div class="section-kicker" data-i18n="savedForLater">GUARDADOS PARA DESPUÉS</div><h1 data-i18n="wishlist">Lista de deseados</h1><p data-i18n="wishlistIntro">Tus productos favoritos, todos en un mismo lugar.</p></div><span class="heading-stamp">☆</span></div><div id="wishlistItems" class="product-grid wishlist-grid"></div><div class="empty-state" id="wishlistEmpty"><span>☆</span><h2 data-i18n="emptyWishlist">Todavía no has guardado nada.</h2><p data-i18n="emptyWishlistHint">Explora los productos y añade tus favoritos con un toque.</p><button class="secondary-button" data-go="cat1" data-i18n="seeProducts">Ver productos</button></div></section>
+    </main>
+    <button class="music-button" id="musicToggle" aria-label="Activar o silenciar música" title="Música"><span id="musicIcon">♫</span><span class="music-label" id="musicLabel" data-i18n="musicOn">Música</span></button>
+    <audio id="backgroundMusic" src="audio/musica.mp3" loop preload="none"></audio>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body></html>
